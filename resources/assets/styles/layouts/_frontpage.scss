@@ -1,0 +1,199 @@
+.carousel {
+//  background:#007aeb;
+}
+
+/*
+Forces image to be 100% width and not max width of 100%
+*/
+.carousel-item .img-fluid {
+  width:100%;
+}
+
+/*
+anchors are inline so you need ot make them block to go full width
+*/
+.carousel-item a {
+  display: block;
+  width:100%;
+}
+
+.tri-istaknute {
+  div {
+    div{
+    border: 1px solid #F4F4F4;
+      p.faikona{
+        font-size: 4em;
+        margin-bottom: 0;
+      }
+      p.naslov{
+        font-size:1.5em;
+        margin-bottom: 0;
+      }
+      p.opis {
+        color: gray;
+      }
+  }
+  }
+
+  a:hover{
+    text-decoration: none;
+    color:white;
+    p{
+      text-decoration: none;
+    }
+    p.opis{
+      color: white;
+    }
+    div {
+      background: $primary;
+    }
+  }
+
+  a:active{
+    div {
+      background: $secondary;
+    }
+  }
+
+}
+
+h2.home {
+  font-weight: lighter;
+  color: white;
+  padding-left: 1.25rem;
+
+}
+
+.najave{
+  background: $primary;
+  h2.home   {
+    color: white;
+
+  }
+  h3 {
+    color: white;
+    font-size: 1.25rem;
+  }
+  a{
+    span{
+      color: $lightblue;
+      font-weight: normal;
+    }
+
+  }
+  a.list-group-item{
+      background: none;
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
+
+  }
+  a.list-group-item:hover{
+    background:darken($primary, 2);
+  }
+  a.list-group-item-action{
+      color: white;
+  }
+}
+
+.vijesti {
+  h2.home{
+    color: $primary;
+  }
+
+  h3 {
+    font-weight: normal;
+  }
+  p{
+    color: $lightgray;
+  }
+  .ostali{
+    h3{
+      font-size: 1.2rem
+    }
+    .datum{
+      font-size: 0.9rem;
+    }
+  }
+  .datum {
+    color: $lightgray;
+    font-weight: lighter;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  .sticky{
+  background: #f3f3f3;
+  background: $primary;
+  h3, p, .datum{
+
+    color: white;
+  }
+    img{
+      width:100%;
+      height: auto;
+    }
+    &:hover {
+      background: $darkprimary;
+    }
+  }
+}
+
+.majka{
+      background:  url(../images/majka-bg.jpg) no-repeat center -150px;
+      background-size: 100%;
+      color: white;
+      p, h3{
+        text-shadow: 2px 2px 4px #000000;
+        padding: 5px;
+      }
+      p {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 1rem;
+      }
+      h3{
+        font-size: 4rem;
+        font-weight: bold;
+      }
+}
+
+.filomena {
+  // background: $secondary;
+  .container{
+    background: #fbfbfb;
+    border: 1px solid #f3f3f3;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    h3{
+      color: $primary;
+      font-size: 3rem;
+      margin-top: 1rem
+    }
+    p{
+      color: $lightgray
+    }
+  }
+}
+
+@media only screen and (max-width: 600px)  {
+
+  .majka{
+        background:  url(../images/majka-bg.jpg) no-repeat -700px -100px;
+  }
+}
+
+@media only screen and (max-width: 720px)  {
+
+  .filomena{
+    .container{
+      h3{
+        margin-top: 1rem;
+      }
+    }
+  }
+
+}
+@media only screen and (max-width: 2000px)  {
+    .majka{
+    background-size: auto;
+    }
+  }

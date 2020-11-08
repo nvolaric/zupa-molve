@@ -1,0 +1,34 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+$theme-colors: (
+  primary: #2D8CE3,
+  secondary: #4E6F82,
+  gray: #CCC
+);
+
+$primary: #2D8CE3;
+$darkprimary: #2278E3;
+$secondary: #4E6F82;
+$lightblue: #D5E1E8;
+$lightgray: #818181;
+$darkgray: #515151;
+$footer: #0A2844;
+$footerborder: #183B5B;
+$footerspan: #5CA2E2;
+$graybg: #fafafa;
+$grayborder: #F3F3F3;
+
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+$list1: $primary,$darkprimary;
+
+@mixin gradient($direction, $list) {
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);
+}

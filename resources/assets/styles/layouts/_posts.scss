@@ -1,0 +1,200 @@
+.title-wrap  {
+    background: $primary;
+  @include gradient(to bottom, $list1);
+      font-size: 1.1rem;
+      line-height: 2rem;
+      color: $darkgray;
+  header{
+    color: white;
+  .entry-title{
+    font-size: 5rem;
+    font-weight: lighter;
+
+  }
+  p.meta{
+    font-weight: lighter;
+  }
+  p.najava-meta{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+  }
+  .title-search-term{
+    font-weight: normal;
+    font-style: italic;
+  }
+
+}
+
+.entry-content {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  color: $darkgray;
+
+    h3.listic{
+      border-bottom: 1px solid #efefef;
+    }
+    h2, h3, h4 {
+      color: $primary;
+    }
+    li {
+      margin-bottom: 0.6rem;
+    }
+  //   ul {
+  //     list-style: none;
+  //   }
+  //     li::before {
+  //   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  //   color: $primary; /* Change the color */
+  //   font-weight: bold; /* If you want it to be bold */
+  //   display: inline-block; /* Needed to add space between the bullet and the text */
+  //   width: 1em; /* Also needed for space (tweak if needed) */
+  //   margin-left: -1em; /* Also needed for space (tweak if needed) */
+  // }
+
+}
+
+.nav-links {
+  margin: 2rem 0 3rem 0;
+  padding-bottom: 1rem;
+  a {
+    border: 1px solid #f3f3f3;
+    padding:1rem 2rem;
+    background: #fefefe;
+  }
+  a:hover {
+    text-decoration: none;
+    background: #fafafa;
+  }
+  a:active {
+    background: $lightblue;
+  }
+  .nav-next {
+    float: left;
+  }
+  .nav-previous {
+    float: right;
+  }
+}
+
+.arhiva-posts {
+  a:hover{
+    text-decoration: none;
+  }
+  .datum {
+    font-size: 1rem;
+      color: $lightgray;
+      font-weight: lighter;
+  }
+  h3{
+      font-size: 1.3rem;
+  }
+}
+
+.search-highlight{
+  background-color:#FF0; font-weight:bold;
+}
+
+.search-results {
+  p{
+    margin-bottom: 0;
+  }
+  article{
+      border-bottom: 1px solid #efefef;
+  }
+  .entry-summary {
+    line-height: 1.4rem;
+
+  }
+}
+
+.blocks-gallery-item img, .vijesti .prvi img, .vijesti .ostali img, .blog .ostali img{
+
+  transition: transform .2s;
+&:hover{
+  transform: scale(1.05);
+}
+}
+
+.vijesti .prvi img:hover{
+    transform: scale(1.02);
+}
+
+.wp-block-verse{
+  text-align: center;
+  background: $graybg;
+  border: 1px solid $grayborder;
+  padding: 2rem 1rem;
+  color:$lightgray;
+  font-size: 1rem;
+  font-family: sans-serif;
+
+}
+.wp-block-quote {
+background: $graybg;
+border: 1px solid $grayborder;
+border-left: 1rem solid $primary;
+padding: 0.8rem 1rem;
+
+  p{
+    padding: 0;
+    margin: 0;
+    color: $primary;
+
+  }
+  cite{
+      font-size: 0.8rem;
+      color: $lightgray;
+      font-style: italic;
+  }
+}
+
+.wp-block-image figcaption{
+  margin-top: 0.1rem;
+  text-align: center;
+  font-style: italic;
+  color: $lightgray;
+  font-size: 0.85rem;
+}
+
+
+
+
+@media only screen and (max-width: 960px)  {
+.title-wrap {
+    header{
+      .entry-title{
+      font-size: 4rem;
+    }
+    p.najava-meta{
+      font-size: 1.1rem;
+    }
+    }
+  }
+}
+
+@media only screen and (max-width: 720px)  {
+.title-wrap {
+    header{
+      .entry-title{
+      font-size: 3rem;
+    }
+    }
+  }
+  .search-results {
+    .entry-summary {
+      font-size: 1rem;
+
+    }
+  }
+}
+
+@media only screen and (max-width: 540px)  {
+.title-wrap {
+    header{
+      .entry-title{
+      font-size: 2.5rem;
+    }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner .nav a {
+  @extend .nav-link;
+}
+
+.brand {
+  background: #cdefaa;
+  color: #f00;
+}
+
+a.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.3rem;
+  span {
+      font-size: 1rem;
+      font-weight: normal;
+  }
+
+}
+
+header .nav{
+  font-size: 1.2rem;
+  li.active a {
+    color: $primary !important;
+  }
+  li.current-menu-ancestor>a{
+    color: $primary !important;
+  }
+}
+
+
+@media only screen and (max-width: 720px)  {
+  .navbar{
+    padding: 0.5rem 0;
+  }
+  a.navbar-brand {
+    font-size: 1.1rem;
+    span{
+      font-size: 0.8rem;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 333px)  {
+  .navbar{
+    padding: 0.1rem 0;
+  }
+  a.navbar-brand {
+    font-size: 0.9rem;
+    span{
+      font-size: 0.7rem;
+    }
+  }
+
+}
